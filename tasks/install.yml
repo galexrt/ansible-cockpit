@@ -1,0 +1,85 @@
+---
+#cockpit
+- name: Install cockpit
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit
+    state: latest
+  when: cockpit
+#cockpit-docker
+- name: Install cockpit-docker
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-docker
+    state: latest
+  when: cockpit_docker
+#cockpit-networkmanager
+- name: Install cockpit-networkmanager
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-networkmanager
+    state: latest
+  when: cockpit_networkmanager
+#cockpit-shell
+- name: Install cockpit-shell
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-shell
+    state: latest
+  when: cockpit_shell
+#cockpit-storaged
+- name: Install cockpit-storaged
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-storaged
+    state: latest
+  when: cockpit_storaged
+#cockpit-doc
+- name: Install cockpit-doc
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-doc
+    state: latest
+  when: cockpit_doc
+#cockpit-kubernetes
+- name: Install cockpit-kubernetes
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-kubernetes
+    state: latest
+  when: cockpit_kubernetes
+#cockpit-ostree
+- name: Install cockpit-ostree
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-ostree
+    state: latest
+  when: cockpit_ostree
+#cockpit-pcp
+- name: Install cockpit-pcp
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-pcp
+    state: latest
+  when: cockpit_pcp
+#cockpit-selinux
+- name: Install cockpit-selinux
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-selinux
+    state: latest
+  when: cockpit_selinux
+#cockpit-sosreport
+- name: Install cockpit-sosreport
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-sosreport
+    state: latest
+  when: cockpit_sosreport
+#cockpit-subscriptions
+- name: Install cockpit-subscriptions
+  action: "{{ ansible_pkg_mgr }}"
+  args:
+    name: cockpit-subscriptions
+    state: latest
+  when: cockpit_subscriptions

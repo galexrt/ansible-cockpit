@@ -1,2 +1,13 @@
 ---
-# defaults file for ansible-cockpit
+cockpit: true
+cockpit_docker: true
+cockpit_networkmanager: true
+cockpit_shell: true
+cockpit_storaged: true
+cockpit_doc: false
+cockpit_kubernetes: false
+cockpit_ostree: false
+cockpit_pcp: false
+cockpit_selinux: false
+cockpit_sosreport: true
+cockpit_subscriptions: false
