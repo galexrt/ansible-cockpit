@@ -1,0 +1,11 @@
+---
+- name: enable cockpit socket
+  service:
+    name: cockpit
+    state: started
+
+- name: restart cockpit service
+  service:
+    name: cockpit
+    state: restarted
+    enabled: true

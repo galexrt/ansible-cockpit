@@ -6,6 +6,8 @@
     name: cockpit
     state: latest
   when: cockpit
+  notify:
+    - enable cockpit socket
 
 #cockpit-docker
 - name: Install cockpit-docker
@@ -14,6 +16,8 @@
     name: cockpit-docker
     state: latest
   when: cockpit_docker
+  notify:
+    - enable cockpit socket
 
 #cockpit-networkmanager
 - name: Install cockpit-networkmanager
@@ -22,6 +26,8 @@
     name: cockpit-networkmanager
     state: latest
   when: cockpit_networkmanager
+  notify:
+    - enable cockpit socket
 
 #cockpit-shell
 - name: Install cockpit-shell
@@ -30,6 +36,8 @@
     name: cockpit-shell
     state: latest
   when: cockpit_shell
+  notify:
+    - enable cockpit socket
 
 #cockpit-storaged
 - name: Install cockpit-storaged
@@ -38,6 +46,8 @@
     name: cockpit-storaged
     state: latest
   when: cockpit_storaged
+  notify:
+    - enable cockpit socket
 
 #cockpit-doc
 - name: Install cockpit-doc
@@ -46,6 +56,8 @@
     name: cockpit-doc
     state: latest
   when: cockpit_doc
+  notify:
+    - enable cockpit socket
 
 #cockpit-kubernetes
 - name: Install cockpit-kubernetes
@@ -54,6 +66,8 @@
     name: cockpit-kubernetes
     state: latest
   when: cockpit_kubernetes
+  notify:
+    - enable cockpit socket
 
 #cockpit-ostree
 - name: Install cockpit-ostree
@@ -62,6 +76,8 @@
     name: cockpit-ostree
     state: latest
   when: cockpit_ostree
+  notify:
+    - enable cockpit socket
 
 #cockpit-pcp
 - name: Install cockpit-pcp
@@ -70,6 +86,8 @@
     name: cockpit-pcp
     state: latest
   when: cockpit_pcp
+  notify:
+    - enable cockpit socket
 
 #cockpit-selinux
 - name: Install cockpit-selinux
@@ -78,6 +96,8 @@
     name: cockpit-selinux
     state: latest
   when: cockpit_selinux
+  notify:
+    - enable cockpit socket
 
 #cockpit-sosreport
 - name: Install cockpit-sosreport
@@ -86,6 +106,8 @@
     name: cockpit-sosreport
     state: latest
   when: cockpit_sosreport
+  notify:
+    - enable cockpit socket
 
 #cockpit-subscriptions
 - name: Install cockpit-subscriptions
@@ -94,3 +116,5 @@
     name: cockpit-subscriptions
     state: latest
   when: cockpit_subscriptions
+  notify:
+    - enable cockpit socket
