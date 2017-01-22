@@ -1,0 +1,21 @@
+---
+- name: Add cockpit debian repo
+  apt_repository:
+    repo: "deb http://repo-cockpitproject.rhcloud.com/debian/ {{ ansible_distribution_release }} main"
+    state: present
+    filename: 'cockpit'
+  when: ansible_distribution == 'Debian'
+
+- name: Add cockpit debian repo key
+  apt_key:
+    keyserver: sks-keyservers.net
+    id: F1BAA57C
+    state: present
+  when: ansible_distribution == 'Debian'
+
+- name: Add ppa for ubuntu
+  apt_repository:
+    repo: 'ppa:cockpit-project/cockpit'
+    codename: 'xenial'
+    state: present
+  when: ansible_distribution == 'Ubuntu'

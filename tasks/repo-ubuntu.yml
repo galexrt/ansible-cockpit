@@ -1,0 +1,7 @@
+---
+- name: Add cockpit ppa for ubuntu
+  apt_repository:
+    repo: 'ppa:cockpit-project/cockpit'
+    codename: 'xenial'
+    state: present
+  when: ansible_distribution == 'Ubuntu'

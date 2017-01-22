@@ -1,7 +1,7 @@
 ansible-cockpit
 ===============
 
-An Ansible role to "setup" features of Fedora's Cockpit.
+An Ansible role to install Fedora's Cockpit with toggleable components.
 
 Requirements
 ------------

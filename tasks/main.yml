@@ -1,3 +1,9 @@
 ---
+- include: repo-debian.yml
+  when: cockpit and ansible_distribution == 'Debian'
+
+- include: repo-ubuntu.yml
+  when: cockpit and ansible_distribution == 'Ubuntu'
+
 - include: install.yml
-  when: ansible_distribution == "Fedora" and ansible_distribution_version|int >= 24
+  when: cockpit
