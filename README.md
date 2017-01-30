@@ -1,7 +1,7 @@
 ansible-cockpit
 ===============
 
-An Ansible role to install Fedora's Cockpit with toggleable components.
+An Ansible role to "setup" features of Fedora's Cockpit.
 
 Requirements
 ------------
@@ -25,14 +25,14 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: galexrt.cockpit, cockpit: true }
+         - { role: galexrt.cockpit, cockpit: true, cockpit-kubernetes: true }
 
 License
 -------
 
-MIT License
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+If you have problems with the role, feel free to create an issue on Github or contact me by mail.
