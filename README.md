@@ -24,10 +24,11 @@ Example Playbook
 ----------------
 
 An example playbook on how to use this role:
-
-    - hosts: servers
-      roles:
-         - { role: galexrt.cockpit, cockpit: true, cockpit-kubernetes: true }
+```
+- hosts: servers
+  roles:
+    - { role: galexrt.cockpit, cockpit: true, cockpit-kubernetes: true }
+```
 
 License
 -------
