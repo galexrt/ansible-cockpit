@@ -1,5 +1,5 @@
 ---
-cockpit: false
+cockpit: true
 cockpit_docker: false
 cockpit_networkmanager: false
 cockpit_shell: false
