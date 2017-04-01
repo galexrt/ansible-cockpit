@@ -4,8 +4,8 @@
     name: cockpit.socket
     state: started
 
-- name: restart cockpit service
+- name: restart cockpit socket
   service:
-    name: cockpit
+    name: cockpit.socket
     state: restarted
     enabled: true
