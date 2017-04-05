@@ -1,8 +1,14 @@
 ---
-- name: enable cockpit socket
+- name: restart cockpit
+  command: /bin/true
+  notfiy:
+    - restart cockpit service
+    - restart cockpit socket
+
+- name: restart cockpit service
   service:
-    name: cockpit.socket
-    state: started
+    name: cockpit
+    state: restarted
 
 - name: restart cockpit socket
   service:

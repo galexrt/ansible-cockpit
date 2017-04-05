@@ -61,6 +61,8 @@ galaxy_info:
   #  - 21
   #  - 22
     - 23
+    - 24
+    - 25
   #- name: opensuse
   #  versions:
   #  - all
@@ -147,11 +149,11 @@ galaxy_info:
   #  versions:
   #  - all
   #  - any
-  #- name: Debian
+  - name: Debian
   #  versions:
   #  - all
   #  - etch
-  #  - jessie
+    - jessie
   #  - lenny
   #  - sid
   #  - squeeze
