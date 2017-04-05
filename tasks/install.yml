@@ -9,7 +9,6 @@
   notify:
     - restart cockpit
 
-# TODO Install cockpit-selinux when selinux has been found
 - name: Install cockpit-selinux
   action: "{{ ansible_pkg_mgr }}"
   args:
@@ -17,7 +16,7 @@
     state: latest
   notify:
     - restart cockpit
-  when: selinux_found
+  when: cockpit_selinux|bool
 
 #cockpit-docker
 - name: Install cockpit-docker

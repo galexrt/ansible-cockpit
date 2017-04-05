@@ -1,5 +1,6 @@
 ---
 cockpit: true
+cockpit_selinux: "{% if ansible_selinux.status is defined %}true{% else %}false{% endif %}"
 cockpit_docker: false
 cockpit_networkmanager: false
 cockpit_shell: false
