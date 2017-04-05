@@ -150,7 +150,7 @@ galaxy_info:
   #  - all
   #  - any
   - name: Debian
-  #  versions:
+    versions:
   #  - all
   #  - etch
     - jessie
