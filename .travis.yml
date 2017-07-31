@@ -20,6 +20,7 @@ install:
 
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
+  - printf '---\n- hosts: localhost\n  remote_user: root\n  roles:\n    - '"$(basename "$(pwd)" | sed 's/ansible-//g')"'' >tests/test.yml
 
 script:
   # Basic role syntax check
